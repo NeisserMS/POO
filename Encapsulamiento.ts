@@ -38,7 +38,7 @@ class Smartphone2 {
     }
 }
 
-
+/*
 let obj2 = new Smartphone2 ('Negro', 'Iphone');
 obj2.makeApthoneCall();
 obj2.makeApthoneCall();
@@ -51,6 +51,8 @@ obj2.makeApthoneCall();
 obj2.makeApthoneCall();
 obj2.makeApthoneCall();
 obj2.makeApthoneCall();
+
+*/
 
 /* Modificaremos lso valores del objeto directamente,
 lo cual hemos corrumpido el objeto, entonces para esto usaremos los
