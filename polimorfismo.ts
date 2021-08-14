@@ -16,6 +16,8 @@
 
     */
 
+    /*
+
     class User {
 
         private profession: string;
@@ -44,7 +46,7 @@
         }
     }
 
-  
+   */
 
     /* 
     Yo quiero que solo trabajen con las clases derivadas, entonces a la clase principal lo volvere abstracta, y cuando quiera instanciar la clase user
