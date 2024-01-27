@@ -1,35 +1,31 @@
 // Ejemplo de Abstraccion (es el estado del objeto)
-// de esta manera ya convertimos el onbjeto smartphone de la realidad en una clase
 // Abstraccion quiere decir extraer lo del mundo real y plasmarlo en el codigo y tiene como finalidad en centrarse en el uso de dicha clase creada.
+/* 
+    Tres caarcteristicas de lso objetos:
+    - los estados (propiedades en la clase)
+    - Los metodos (conocidos como comportamientos)
+    - Identidad (cada instancia es unica)
+*/
 
 class Smartphone {
-    color : string;
-    marca : string;
+    color: string;
+    marca: string;
+    memoriaRam: number;
 
-    constructor(color : string, marca: string){  // pasamos los valores
-        // aqui inicializaremos los valores
+    constructor(color: string, marca: string, memoriaRam: number) {
         this.color = color;
         this.marca = marca;
-        // a traves de this hacemso referencia a las propiedades que tiene el objeto
+        this.memoriaRam = memoriaRam;
     }
 
-    makeApthoneCall() : void { // creacion de un metodo para utilizarlo como queramos
-
+    llamar(): void {
+        console.log('llamando');
     }
-
 
 }
 
-// Instanciaremos la clase
+let obj = new Smartphone('Negro', 'Iphone', 32);
 
-let obj = new Smartphone ('Negro', 'Iphone');
 
-/* 
-tres caarcteristicas de lso objetos:
-- los estados (propiedades en la clase)
-- Los metodos
-- Identidad (cada instancia es unica)
-
-*/
 
 

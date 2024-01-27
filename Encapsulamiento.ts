@@ -9,20 +9,20 @@ no debrria hacerse directamente, no podemos acceder a la propiedad y modificarlo
 estaremos creando un objeto que es propenso a errores.
 */
 
-class Smartphone2 {
-    private color : string;
-    private marca : string;
+class Smartphone3 {
+    private color: string;
+    private marca: string;
     private _bateria: number;
 
-    constructor(color : string, marca: string){  
+    constructor(color: string, marca: string) {
         this.color = color;
         this.marca = marca;
         this._bateria = 100; // lo incializamos directamente porque es opcional        
     }
 
-    makeApthoneCall() : void { 
+    makeApthoneCall(): void {
 
-        if(this._bateria === 0){
+        if (this._bateria === 0) {
 
             throw "El celular no cuenta con la bateria necesaria";
         }
@@ -31,9 +31,9 @@ class Smartphone2 {
 
     }
 
-  
 
-    recharge(){
+
+    recharge() {
         this._bateria = 100;
     }
 }
@@ -58,11 +58,10 @@ obj2.makeApthoneCall();
 lo cual hemos corrumpido el objeto, entonces para esto usaremos los
 modificadores de acceso (existen tanto para los metodos como para las propiedades).
 Al cambiar los campos a privados ya no podra funcionar el codigo de abajo porque nos dira
-que solo se puede usar en la clase y no fuera de ella. 
+que solo se puede usar en la clase y no fuera de ella.
 
 obj2.color = 'blanco';
 obj2.marca = 'sansumg';
-
  */
 
 // como no podemos acceder directamente a la propiedad bateria, hacemos uso de los getters.
